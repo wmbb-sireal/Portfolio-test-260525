@@ -622,7 +622,7 @@ avatarDeleteBtn?.addEventListener('click', (e) => {
   e.stopPropagation(); // Stop click from triggering parent container input open!
   if (avatarPreview && avatarDefaultIcon && avatarDeleteBtn) {
     localStorage.removeItem('profile-avatar');
-    avatarPreview.src = '/src/assets/images/avatar_1779681330951.png';
+    avatarPreview.src = './images/avatar_sijin.png';
     avatarPreview.classList.remove('hidden');
     avatarDefaultIcon.classList.add('hidden');
     avatarDeleteBtn.classList.remove('inline-flex');
