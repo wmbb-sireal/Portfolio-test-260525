@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import {
   createIcons,
   Zap,
@@ -622,7 +624,7 @@ avatarDeleteBtn?.addEventListener('click', (e) => {
   e.stopPropagation(); // Stop click from triggering parent container input open!
   if (avatarPreview && avatarDefaultIcon && avatarDeleteBtn) {
     localStorage.removeItem('profile-avatar');
-    avatarPreview.src = './images/avatar_sijin.png';
+    avatarPreview.src = import.meta.env.BASE_URL + 'images/avatar_sijin.png';
     avatarPreview.classList.remove('hidden');
     avatarDefaultIcon.classList.add('hidden');
     avatarDeleteBtn.classList.remove('inline-flex');
