@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(({ command }) => {
   return {
-    base: command === 'serve' ? '/' : '/Portfolio-test-260525/',
+    base: command === 'serve' ? '/' : './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
